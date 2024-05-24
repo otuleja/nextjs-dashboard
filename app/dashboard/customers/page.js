@@ -35,8 +35,8 @@ async function fetchPosts() {
 
 // Server-side component to display posts
 export default async function PostsPage() {
-  // const posts = await fetchPosts();
-  const posts = []
+  const posts = await fetchPosts();
+  // const posts = []
   return (
     <div>
       <h1>Posts</h1>
