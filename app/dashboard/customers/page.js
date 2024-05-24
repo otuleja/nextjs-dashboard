@@ -41,7 +41,7 @@ export default async function PostsPage() {
   // const posts = []
   return (
     <div>
-      <h1>Posts</h1>
+      <h1>Postsssss</h1>
       <ul>
         {posts.map((post) => (
           <li key={post._id}>
