@@ -11,9 +11,6 @@ import { NextResponse } from 'next/server';
 
 export async function GET() {
   try {
-    // const client = await clientPromise;
-    // const db = client.db();
-    // const posts = await db.collection('posts').find({}).toArray();
     const posts = "alpha"
     return NextResponse.json(posts);
 
