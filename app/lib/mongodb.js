@@ -17,7 +17,7 @@ if (process.env.NODE_ENV === 'development') {
   clientPromise = global._mongoClientPromise;
 } else {
   // In production mode, it's best to not use a global variable
-  client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+  client = new MongoClient(uri, { useNewUrlParser: true });
   clientPromise = client.connect();
 }
 
