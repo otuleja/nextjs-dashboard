@@ -14,23 +14,24 @@ const GET_POSTS_QUERY = `
 
 // Function to fetch posts from the GraphQL API
 async function fetchPosts() {
-  const res = await fetch('http://localhost:3000/api/graphql', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      query: GET_POSTS_QUERY,
-    }),
-  });
-  // console.log("res", res)
-  if (!res.ok) {
-    throw new Error('Failed to fetch posts');
-  }
+  // const res = await fetch('http://localhost:3000/api/graphql', {
+  //   method: 'POST',
+  //   headers: {
+  //     'Content-Type': 'application/json',
+  //   },
+  //   body: JSON.stringify({
+  //     query: GET_POSTS_QUERY,
+  //   }),
+  // });
+  // // console.log("res", res)
+  // if (!res.ok) {
+  //   throw new Error('Failed to fetch posts');
+  // }
 
-  const json = await res.json();
-  console.log("json", json.data.posts)
-  return json.data.posts;
+  // const json = await res.json();
+  // console.log("json", json.data.posts)
+  // return json.data.posts;
+  return []
 }
 
 // Server-side component to display posts
