@@ -32,6 +32,10 @@ export async function fetchRevenue() {
   }
 }
 
+export async function getEnv() {
+  return process.env.KINDE_POST_LOGOUT_REDIRECT_URL + " " + process.env.BASE_URL;
+}
+
 export async function fetchLatestInvoices() {
   try {
     const data = await sql<LatestInvoiceRaw>`

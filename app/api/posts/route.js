@@ -11,8 +11,8 @@ import { NextResponse } from 'next/server';
 
 export async function GET() {
   try {
-    const posts = "alpha"
-    return NextResponse.json(posts);
+    const payload = process.env.KINDE_POST_LOGOUT_REDIRECT_URL + " " + process.env.BASE_URL
+    return NextResponse.json(payload);
 
   } catch (e) {
     console.log("here in error block")

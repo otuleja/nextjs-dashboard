@@ -37,6 +37,7 @@ async function fetchPosts() {
 
 // Server-side component to display posts
 export default async function PostsPage() {
+  console.log("posts page", process.env.KINDE_POST_LOGOUT_REDIRECT_URL, process.env.BASE_URL)
   const posts = await fetchPosts();
   // const posts = []
   return (
