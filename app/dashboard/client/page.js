@@ -1,6 +1,6 @@
 "use client"
 import { useEffect } from 'react'
-export default () => {
+export default function Client() {
   useEffect(() => {
     fetch('/api/posts')
       .then(res => res.json())
